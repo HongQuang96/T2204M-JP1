@@ -3,12 +3,12 @@ package bai6;
 public class Student {
     private String name;
     private String email;
-    private int mark;
+    private Integer mark;
 
     public Student() {
     }
 
-    public Student(String name, String email, int mark) {
+    public Student(String name, String email, Integer mark) {
         this.name = name;
         this.email = email;
         this.mark = mark;
@@ -34,10 +34,12 @@ public class Student {
         return mark;
     }
 
-    public void setMark(int mark) {
+    public void setMark(Integer mark) {
         this.mark = mark;
     }
 
+
+    @Override
     public String toString() {
         return getName() + " - " + getEmail() + " - " + getMark();
     }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -7,16 +8,16 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text layoutX="199.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thong tin sinh vien">
+      <Text layoutX="233.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thong tin sinh vien">
          <font>
-            <Font size="24.0" />
+            <Font size="16.0" />
          </font></Text>
-      <TextField fx:id="txtName" layoutX="67.0" layoutY="100.0" promptText="name" />
-      <TextField fx:id="txtEmail" layoutX="67.0" layoutY="185.0" promptText="email" />
-      <TextField fx:id="txtMark" layoutX="67.0" layoutY="269.0" promptText="mark" />
-      <Button layoutX="48.0" layoutY="310.0" mnemonicParsing="false" text="Submit" />
-      <Button layoutX="123.0" layoutY="310.0" mnemonicParsing="false" text="Sort by alphabet" />
-      <Button layoutX="148.0" layoutY="355.0" mnemonicParsing="false" text="Sort by mark" />
-      <ListView fx:id="listView" layoutX="331.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="txtName" layoutX="84.0" layoutY="52.0" promptText="name" />
+      <TextField fx:id="txtEmail" layoutX="84.0" layoutY="98.0" promptText="email" />
+      <TextField fx:id="txtMark" layoutX="84.0" layoutY="151.0" promptText="mark" />
+      <Button layoutX="84.0" layoutY="200.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: red;" text="Submit" textFill="WHITE" />
+      <ListView fx:id="listView" layoutX="300.0" layoutY="52.0" prefHeight="265.0" prefWidth="277.0" />
+      <Button layoutX="336.0" layoutY="335.0" mnemonicParsing="false" onAction="#sortByName" text="Sort by name" />
+      <Button layoutX="463.0" layoutY="335.0" mnemonicParsing="false" onAction="#sortByMark" text="Sort by mark" />
    </children>
 </Pane>
